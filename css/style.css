@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* body ここは当麻さんのCSS記述とほぼ同じです（文字のセンタリングだけ外しました*/
+body {
+background: linear-gradient(to right, #74dcf8 20%, #ffffff 20%, #ffffff 80%, #74dcf8 80%);
+color: #785f68;
+}
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* wrap, header, footer */
+
+#wrap {            /* HTMLで<div id="wrap">★</div>で囲んだ部分がコンテンツを入れる箱になります */
+width:55%;         /* 画面に対しての箱の幅 */
+margin:0 auto;     /* 画面に対しての箱の位置を中心に */
+background:#fff;   /* 箱の背景色 */
+}
+
+/* HTMLで<header>★</header>で囲んだ部分に適用される部分、主にサイトの頭 */
+header {
+color: #000;
+background:#fff;
+text-align:center
+}
+
+/* HTMLで<footer>★</footer>で囲んだ部分に適用される部分、主にサイトの足 */
+footer {
+color: #000;
+background:#ffdd77;
+}
+
+/* 箇条書きの点を消す　横並びにする（メニュー用) */
+ul.menu {
+     list-style: none;
+     padding: 0;
+   }
+
+ul li.menu {
+     display: inline-block;
+   }
+
+   /* 余白の為の罫線 */
+   hr.margin {
+   height: 1px;
+   border: 0px;
+   border-top: solid 2em #fff;
+   }
+
+   /* 破線 */
+   hr.dashed{
+       border-top: 2px dashed #000;
+       border-right: none;
+       border-bottom: none;
+       border-left: none;
+   }
+
+   /* ズレ防止のスクロールバー表示　他の手段も模索中 */
+   html{ overflow-y:scroll; }
+
+   /* リンク */
+   a {
+   color:#74dcf8;
+   text-decoration: none;
+   }
+
+   /* 画像の整列 */
+   .wrapper {
+   width: 100%;
+   margin: 0 auto;
+   }
+   .gallery {
+   margin: 0 auto;
+   }
+   .item {
+   width: 280px;
+   }
+   .item img {
+   width: 100%;
+   }
+   /* サムネの見え方 */
+   .gallery img{
+   width:280px;
+   height:280px;
+   object-fit:cover;
+   object-position:0% 0%;
+   margin-bottom: 50px;
+   }
+   /* サムネのフォーカス位置(100%100%が右下,0%0%が左上) */
+   .position50_0 img{
+   object-position: 50% 0%/* 中央　上*/
+   }
+   .position100_50 img{
+   object-position: 100% 50%/* 右　中央*/
+   }
+   .position50_50 img{
+   object-position: 50% 50%/* 中央　中央*/
+   }
+
+   /* お守り */
+   .header img{
+     width:100%;
+     height:100%;
+   }
+
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .item1{
+    width:200px
+  }
+  .item2{
+    width:25px
+  }
+  .item3{
+    width:42.5px
+  }
+  .item4{
+    width:47.5px
+  }
+  .item5{
+    width:75px
+  }
+  .item6{
+    width:37.5px
+  }
+  .item {
+  width: 140px;
+  }
+  .gallery img{
+  width:140px;
+  height:140px;
+  margin-bottom: 20px;
+  margin-right:5px;
+}
+}
+
+@media screen and (max-width: 399px) {
+  .item1{
+    width:150px
+  }
+  .item2{
+    width:15px
+  }
+  .item3{
+    width:25.5px
+  }
+  .item4{
+    width:28.5px
+  }
+  .item5{
+    width:35px
+  }
+  .item6{
+    width:17.5px
+  }
+  .item {
+  width: 100px;
+  }
+  .gallery img{
+  width:100px;
+  height:100px;
+  margin-bottom: 10px;
+  margin-right:5px;
+}
