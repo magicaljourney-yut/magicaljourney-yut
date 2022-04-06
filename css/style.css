@@ -124,6 +124,14 @@ ul li.menu {
   .item {
   width: 140px;
   }
+  .item7 img{
+  width:27px;
+  height:24px
+  }
+  .item8 img{
+  width:24px;
+  height:24px
+  }
   .gallery img{
   width:140px;
   height:140px;
@@ -153,6 +161,14 @@ ul li.menu {
   }
   .item {
   width: 100px;
+  }
+  .item7 img{
+  width:18px;
+  height:16px
+  }
+  .item8 img{
+  width:16px;
+  height:16px
   }
   .gallery img{
   width:100px;
