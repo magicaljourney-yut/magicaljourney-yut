@@ -54,6 +54,13 @@ ul li.menu {
        border-left: none;
    }
 
+   hr.line{
+       border-top: 1px solid #000;
+       border-right: none;
+       border-bottom: none;
+       border-left: none;
+   }
+
    /* ズレ防止のスクロールバー表示　他の手段も模索中 */
    html{ overflow-y:scroll; }
 
